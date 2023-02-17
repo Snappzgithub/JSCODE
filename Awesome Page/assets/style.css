@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  font-family: "Razer BlackWidow";
+  padding: 0px;
+}
+header h1 {
+  text-align: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 3.5rem;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+  header nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #121111;
+  }
+    header nav a {
+  text-decoration: none;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(127 229 73);
+  margin: 15px 0;
+  padding: 20px 40px;
+  transition: 0.3s;
+   }
+      header nav a:before {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #63f43f;
+      border-left: 2px solid #0b9f35;
+      transition: 0.3s;
+      transition-delay: 0.3s;
+      }
+      header nav a::after{
+        content: " ";
+        position: absolute;
+        bottom:  -1px;
+        right: -1px;
+        width: 10px;
+        height: 10px;
+        border-bottom:  2px solid #40c07c;
+        border-right: 2px solid #08ff52;
+        transition: 0.3s;
+        transition-delay: 0.3s;
+        }
+        header nav a:hover::before, a:hover::after {
+          width: 100%;
+          height: 100%;
+          transition-delay: 0s;
+        }
+        header nav a:hover {
+          background: #25ff7c;
+          color: black;
+          box-shadow: 0 0 150px #48a708;
+          transition-delay: 0.3s;
+        }
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 77vh;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+  .boxContainer {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    color: #62d762;
+    background-size: cover;
+    background-color: #4a4a4a;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    justify-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+    .boxContainer:hover {
+      cursor: pointer;
+      background-color: #09ad6e;
+    }
+
+footer {
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  font-weight: lighter;
+  padding: 10px;
+  min-height: 10px;
+  
+}
+
